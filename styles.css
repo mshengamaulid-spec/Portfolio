@@ -1,0 +1,120 @@
+/* CSS Variables */
+:root {
+  --primary: #5b7485;
+  --bg: #f4f4f4;
+  --text: #222;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+header {
+  background: var(--primary);
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+}
+
+.LINKS {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.LINKS a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+}
+
+.profile-photo {
+  width: 20rem;
+  border-radius: 70%;
+  margin: 1rem 0;
+}
+
+
+.PROJECTS GRIDS {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+
+  max-width: 30rem;
+}
+input,
+textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+
+footer {
+  background:rgb(175, 62, 62);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
